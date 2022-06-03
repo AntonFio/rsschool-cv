@@ -1,1 +1,1 @@
-AntonFiolkovski.github.io/rsschool-cv/cv
+https://AntonFiolkovski.github.io/rsschool-cv/
