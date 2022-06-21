@@ -1,0 +1,199 @@
+* {
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth; 
+}
+
+body{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background-color: rgb(185, 212, 203);
+   height: 100%;
+   font-size: 18px;
+}
+
+.container{
+   max-width: 980px;
+   margin: 0 auto;
+}
+
+.header{
+   height: 60px;
+   background:rgb(182, 24, 24);
+   line-height: 30px;
+}
+
+.main{
+   flex-grow: 1;
+}
+
+.name-anton{
+   margin-top: 55px;
+   font-size: 38px;
+}
+
+h2{
+   font-size: 28px;
+}
+
+.ul-nav{
+   display: flex;
+   justify-content: flex-end;
+   list-style: none;
+   align-items: center;
+}
+
+.ul-nav li{
+padding: 0 15px;
+}
+
+.ul-nav li:last-child{
+   padding-right: 0;
+   }
+
+body a{
+   text-decoration: none;
+   color:rgb(255, 253, 253);
+   transition: color 0.5s;
+}
+
+.skills-ul li a{
+   padding-left: 5px;
+}
+
+ body a:hover{
+   color: rgb(0, 0, 0);
+ }
+ 
+
+.photo-name{
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 5px solid rgb(182, 24, 24);
+   padding: 11px;
+}
+
+.img-fhoto{
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+}
+
+.name-me{
+   padding-right: 255px;
+   text-align: center;
+}
+
+
+.section-info{
+   display: flex;
+   width: 100%;
+   padding: 0 11px;
+}
+
+.section-left{
+   width: 30%;
+}
+
+.section-right{
+   width: 70%;
+   padding-left: 15px;
+}
+
+
+.about-me,
+.contact,
+.skills,
+.educaion,
+.project{
+   border-bottom: 2px solid #fff;
+}
+
+.footer{
+   background: rgb(182, 24, 24);
+   height: 45px;
+   overflow: hidden;
+   line-height: 45px;
+}
+
+.footer-button{
+   display: flex;
+   justify-content: space-between;
+   padding: 0 11px;
+}
+
+.footer-logo{
+   display: inline;
+}
+
+.footer-info a{
+   text-decoration: none;
+}
+
+.logo-img{
+   width: 120px;
+   height: 45px;
+   padding: 5px;
+}
+
+
+@media (max-width: 930px) {
+   .section-info{
+      flex-direction: column;
+   }
+
+   .section-left, .section-right{
+      width: 100%;
+   }
+
+   .section-right{
+      padding: 0;
+   }
+
+   .english{
+      border-bottom: 2px solid #fff;
+   }
+
+   .ul-nav{
+      list-style-type: none;
+      display: block;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+   }
+   
+   .ul-nav li{
+      padding: 2px 0;
+      transition: 0.5s;
+   }
+
+   .ul-nav li:hover{
+      background-color: rgb(111, 138, 138);
+   }
+
+   .header{
+      height: 100%;
+      line-height: normal;
+   }
+
+   .photo-name{
+      display: flex;
+      flex-direction: column;
+   align-items: center;
+   }
+   .name-me{
+      padding: 0;
+   }
+
+   .name-anton{
+      margin-top: 5px;
+   }
+
+   body h2{
+      text-align: center;
+   }
+
+ }
